@@ -6,7 +6,6 @@ CONFIG_DIR="$HOME/.config"
 
 echo "Instalace prostředí..."
 
-# (V základním Debianu obvykle chybí)
 #if ! command -v eza &> /dev/null; then
 #    echo "Přidání repozitáře pro EZA..."
 #    sudo mkdir -p /etc/apt/keyrings
@@ -36,6 +35,8 @@ cp -r "$HOME/dotfiles_temp/fish/." "$CONFIG_DIR/fish/"
 
 # Úklid
 rm -rf "$HOME/dotfiles_temp"
+
+echo "Instalace dokončena!"
 
 # NASTAVENÍ SHELLU A PLUGINŮ
 #echo "Instalace Fisher a pluginů..."
