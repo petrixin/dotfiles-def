@@ -7,7 +7,7 @@ if status is-interactive
     fzf_configure_bindings --directory=\cf
 
 ### Aliasy
-    alias ls='eza --icons --group-directories-first'
+    alias ls='eza --group-directories-first'
     alias ll='ls --header --long'
     alias la='ll --all'
     alias lt='ll --tree --level=2 --git'
@@ -16,7 +16,7 @@ if status is-interactive
     alias fd='find (fzf)'
 
     alias mv='mv -i'
-    alias cp='cp -i'
+    # alias cp='cp -i'
     # alias rm='rm -i'
 
     alias mkdir='mkdir -pv'
