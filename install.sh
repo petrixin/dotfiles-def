@@ -39,8 +39,8 @@ rm -rf "$HOME/dotfiles_temp"
 
 # NASTAVENÍ SHELLU A PLUGINŮ
 echo "Instalace Fisher a pluginů..."
-fish -c "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher && fisher install patrickf1/fzf.fish"
-
+fish -c "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher"
+fish -c "fisher install patrickf1/fzf.fish"
 # Nastavení Fishe jako výchozího shellu (pokud ještě není)
 if [ "$SHELL" != "$(which fish)" ]; then
     echo "Změna shell na Fish..."
