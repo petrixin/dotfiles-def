@@ -47,7 +47,6 @@ rm -f ~/.config/fish/fish_plugins
 fish -c 'curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher'
 
 # Instalace pluginu FZF.fish
-echo "Instaluje se fzf.fish..."
 fish -c 'fisher install patrickf1/fzf.fish'
 
 # Aktualizace pluginů
