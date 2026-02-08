@@ -38,7 +38,7 @@ cp -r "$HOME/dotfiles_temp/fish/." "$CONFIG_DIR/fish/"
 rm -rf "$HOME/dotfiles_temp"
 
 # NASTAVENÍ SHELLU A PLUGINŮ
-echo "Instalace Fisher a pluginů..."
+
 fish -c "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher"
 fish -c "fisher install patrickf1/fzf.fish"
 # Nastavení Fishe jako výchozího shellu (pokud ještě není)
@@ -46,6 +46,21 @@ if [ "$SHELL" != "$(which fish)" ]; then
     echo "Změna shell na Fish..."
     sudo chsh -s $(which fish) $USER
 fi
+
+echo "Instalace Fisher a pluginů..."
+
+# Vyčištění
+rm -f ~/.config/fish/fish_plugins
+
+# Instalace samotného Fishera
+fish -c 'curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher'
+
+# Instalace pluginu FZF.fish
+echo "Instaluje se fzf.fish..."
+fish -c 'fisher install patrickf1/fzf.fish'
+
+# Aktualizace pluginů (pro jistotu)
+fish -c 'fisher update'
 
 echo "Vše dokončeno."
 echo "Restartuj terminál."
