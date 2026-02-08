@@ -18,7 +18,7 @@ echo "Instalace prostředí..."
 # HROMADNÁ INSTALACE BALÍČKŮ (APT)
 echo "Aktualizace systému a instalace všech programů..."
 sudo apt update
-sudo apt install -y fish git curl fzf fd-find zoxide eza
+sudo apt install -y fish git curl fzf fd-find zoxide eza bat
 
 # OPRAVA FD-FIND
 mkdir -p ~/.local/bin
