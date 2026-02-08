@@ -50,7 +50,7 @@ fish -c 'curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/fun
 echo "Instaluje se fzf.fish..."
 fish -c 'fisher install patrickf1/fzf.fish'
 
-# Aktualizace pluginů (pro jistotu)
+# Aktualizace pluginů
 fish -c 'fisher update'
 
 echo "Vše dokončeno."
