@@ -52,6 +52,3 @@ fish -c 'fisher install patrickf1/fzf.fish'
 
 # Aktualizace pluginů
 fish -c 'fisher update'
-
-echo "Instalace dokončena."
-echo "Restartuj terminál."
