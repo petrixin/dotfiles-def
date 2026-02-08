@@ -38,18 +38,18 @@ cp -r "$HOME/dotfiles_temp/fish/." "$CONFIG_DIR/fish/"
 rm -rf "$HOME/dotfiles_temp"
 
 # NASTAVENÍ SHELLU A PLUGINŮ
-echo "Instalace Fisher a pluginů..."
+#echo "Instalace Fisher a pluginů..."
 
 # Vyčištění
-rm -f ~/.config/fish/fish_plugins
+#rm -f ~/.config/fish/fish_plugins
 
-touch ~/.config/fish/fish_plugins
+#touch ~/.config/fish/fish_plugins
 
 # Instalace samotného Fishera
-fish --no-config -c 'curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher'
+#fish --no-config -c 'curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher'
 
 # Instalace pluginu FZF.fish
-fish --no-config -c 'fisher install patrickf1/fzf.fish'
+#fish --no-config -c 'fisher install patrickf1/fzf.fish'
 
 # Aktualizace pluginů
 #fish --no-config -c 'fisher update'
