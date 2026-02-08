@@ -52,4 +52,4 @@ fish --no-config -c 'curl -sL https://raw.githubusercontent.com/jorgebucaran/fis
 fish --no-config -c 'fisher install patrickf1/fzf.fish'
 
 # Aktualizace pluginů
-fish --no-config -c 'fisher update'
+#fish --no-config -c 'fisher update'
