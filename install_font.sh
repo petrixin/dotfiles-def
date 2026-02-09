@@ -23,3 +23,9 @@ fc-cache -fv
 rm JetBrainsMono.zip
 
 echo "Font nainstalován."
+
+# Instalace STARSHIP
+echo "Instaluji Starship..."
+curl -sS https://starship.rs/install.sh | sh -s -- -y
+
+curl -L https://raw.githubusercontent.com/petrixin/dotfiles-def/main/starship.toml -o ~/.config/starship.toml
