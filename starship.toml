@@ -17,7 +17,7 @@ $fill\
 $cmd_duration\
 $fill\
 $status\
-[](fg:lavender bg:surface0)\
+[](fg:lavender bg:none)\
 $time\
 $line_break\
 [╰─](fg:overlay0)\
